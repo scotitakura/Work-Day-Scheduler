@@ -29,7 +29,6 @@ timeCheck();
 $(".saveBtn").click(function() {
     var input = $(this).siblings(".description");
     var inputValue = input.val()
-    console.log("input value " + inputValue);
     var hour = input.attr("id");
     localStorage.setItem(hour, inputValue);
 });
